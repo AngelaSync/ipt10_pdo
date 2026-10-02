@@ -16,7 +16,7 @@ try {
             PDO::ATTR_EMULATE_PREPARES   => false,
             PDO::ATTR_STRINGIFY_FETCHES  => false,
             // TODO(22): manual transaction control
-            PDO::ATTR_AUTOCOMMIT         => false,
+            PDO::ATTR_AUTOCOMMIT         => true,
         ]
     );
 } catch (PDOException $e) {
